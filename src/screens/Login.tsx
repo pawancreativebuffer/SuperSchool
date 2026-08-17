@@ -134,7 +134,7 @@ const Login = () => {
     } else {
       setErrorMsg('');
       console.log('Sending OTP to', phoneNumber);
-      // Navigate or handle success here
+      navigation.replace('Dashboard');
     }
   };
 
