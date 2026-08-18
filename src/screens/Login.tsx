@@ -213,7 +213,7 @@ const Login = () => {
 
                     {/* Phone Number Input */}
                     <View className="w-full mb-6">
-                      <View className={`flex-row items-center w-full bg-[#F3F4F6] rounded-2xl px-5 py-4 ${errorMsg ? 'border border-red-500' : ''}`}>
+                      <View className={`flex-row items-center w-full h-[50px] bg-[#F3F4F6] rounded-[10px] px-5 ${errorMsg ? 'border border-red-500' : ''}`}>
                         <Phone size={20} color="#3A3A3A" />
                         <View className="w-[1px] h-6 bg-gray-300 mx-3" />
                         <TextInput
@@ -252,7 +252,7 @@ const Login = () => {
                 {/* "Send OTP" Button placed perfectly inside the black space of the notch */}
                 <TouchableOpacity
                   className="absolute w-full items-center justify-center z-20 outline-none"
-                  style={Platform.OS === 'web' ? { bottom: 12, height: 40, outlineStyle: 'none' } as any : { bottom: 12, height: 40 }}
+                  style={Platform.OS === 'web' ? { bottom: 7, height: 50, outlineStyle: 'none' } as any : { bottom: 7, height: 50 }}
                   onPress={handleSendOTP}
                   activeOpacity={0.8}
                 >
